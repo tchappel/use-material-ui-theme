@@ -1,0 +1,82 @@
+{
+  "author": "Thomas Chappel",
+  "bugs": {
+    "url": "https://github.com/tchappel/use-material-ui-theme/issues"
+  },
+  "description": "add dark and light mode meterial-ui theme",
+  "devDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "husky": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "size-limit": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^3.9.10"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "homepage": "https://github.com/tchappel/use-material-ui-theme#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "keywords": [
+    "react",
+    "material-ui",
+    "dark-mode",
+    "material-ui-theme",
+    "theme"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/use-material-ui-theme.esm.js",
+  "name": "use-material-ui-theme",
+  "peerDependencies": {
+    "@mui/material": ">=5",
+    "react": ">=16"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchappel/use-material-ui-theme.git"
+  },
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "start": "tsdx watch",
+    "test": "tsdx test --passWithNoTests"
+  },
+  "size-limit": [
+    {
+      "limit": "10 KB",
+      "path": "dist/use-material-ui-theme.cjs.production.min.js"
+    },
+    {
+      "limit": "10 KB",
+      "path": "dist/use-material-ui-theme.esm.js"
+    }
+  ],
+  "typings": "dist/index.d.ts",
+  "version": "0.1.0"
+}
